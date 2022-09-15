@@ -7,7 +7,7 @@ define('DB_NAME', 'JuanFi');//Db name
 define('DB_PORT', '3306');//Db port
 
 // Mikrotik credentials
-define('MT_SERVER', '192.168.2.114');//Mikrotik IP
+define('MT_SERVER', '10.0.0.1');//Mikrotik IP
 define('MT_USERNAME', 'admin');//Mikrotik Username
 define('MT_PASSWORD', 'g3nm@n'); //Mikrotik Password
 define('MT_PORT', '8728'); //Mikrotik port
@@ -24,6 +24,9 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute (PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $db->exec("set names utf8");
+
+error_reporting(0);
+ini_set('display_errors', 0);
 
 
 

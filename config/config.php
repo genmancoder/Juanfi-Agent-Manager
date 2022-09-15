@@ -7,7 +7,7 @@ define('DB_NAME', 'JuanFi');//Db name
 define('DB_PORT', '3306');//Db port
 
 // Mikrotik credentials
-define('MT_SERVER', '10.15.0.1');//Mikrotik IP
+define('MT_SERVER', '10.0.0.1');//Mikrotik IP
 define('MT_USERNAME', 'Development');//Mikrotik Username
 define('MT_PASSWORD', 'Development'); //Mikrotik Password
 define('MT_PORT', '8728'); //Mikrotik port
